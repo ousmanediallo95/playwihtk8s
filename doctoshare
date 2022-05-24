@@ -3,3 +3,4 @@ gl = gitlab.Gitlab(url='https://gitlab.com', private_token='glpat-cF45UgcB1v6AQo
 projects = gl.projects.list(owned=True)
 for project in projects:
     print(project)
+ curl "https://gitlab.com/api/v4/projects?private_token=glpat-cF45UgcB1v6AQoHqAPtn" | jq
